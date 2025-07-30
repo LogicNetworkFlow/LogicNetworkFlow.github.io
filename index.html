@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="Towards Tighter Convex Relaxation of Mixed-integer Programs: Leveraging Logic Network Flow for Task and Motion Planning">
+  <meta name="keywords" content="task and motion planning, temporal logic, mixed-integer programming">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>Towards Tighter Convex Relaxation of Mixed-integer Programs: Leveraging Logic Network Flow for Task and Motion Planning</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -88,32 +88,32 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">Towards Tighter Convex Relaxation of Mixed-integer Programs: Leveraging Logic Network Flow for Task and Motion Planning</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              <a href="https://xuanlin.github.io/XuanLin-X/">Xuan Lin</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=_afjEusAAAAJ&hl=en">Jiming Ren</a><sup>1*</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              <a href="https://www.yandongluo.com/">Yandong Luo</a><sup>1*</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
+              <a href="https://www.isye.gatech.edu/users/weijun-xie">Weijun Xie</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
+              <a href="https://www.me.gatech.edu/faculty/zhao">Ye Zhao</a><sup>1</sup>,
             </span>
-            <span class="author-block">
+            <!-- <span class="author-block">
               <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
             </span>
             <span class="author-block">
               <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
-            </span>
+            </span> -->
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>George W. Woodruff School of Mechanical Engineering, Georgia Institute of Technology, USA,</span>
+            <span class="author-block"><sup>2</sup>Grado Department of Industrial and Systems Engineering, Virginia Tech, USA</span>
           </div>
 
           <div class="column has-text-centered">
@@ -178,21 +178,22 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
         <source src="./static/videos/teaser.mp4"
                 type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
+      </video> -->
+      <img id="teaser" src="./static/images/fig_Fourier.png" alt="fig_Fourier image" style="width: 100%; height: auto;" />
+      <!-- <h2 class="subtitle has-text-centered">
         <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
         free-viewpoint
         portraits.
-      </h2>
+      </h2> -->
     </div>
   </div>
 </section>
 
 
-<section class="hero is-light is-small">
+<!-- <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -247,7 +248,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <section class="section">
@@ -258,10 +259,11 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            <!-- We present the first method capable of photorealistically reconstructing a non-rigidly
+            deforming scene using photos/videos captured casually from mobile phones. -->
+            This paper proposes an optimization-based task and motion planning framework, named ``Logic Network Flow" (LNF), to integrate temporal logic specifications into efficient mixed-integer programs. Inspired by the Graph-of-Convex-Sets (GCS) formulation, temporal predicates are encoded as polyhedron constraints on each edge of a network flow model, instead of as constraints between nodes as in traditional Logic Tree formulations. We further propose a network-flow-based Fourier-Motzkin elimination procedure that removes continuous flow variables while preserving convex relaxation tightness, effectively projecting the GCS formulation onto a lower-dimensional space with fewer variables and constraints. For our temporal logic motion planning formulation, this projection leads to provably tighter convex relaxations and fewer constraints than Logic Tree approaches, when synthesized with various piecewise-affine (PWA) dynamic system formulations. Comprehensive experiments across vehicle routing, multi-robot coordination, and temporal logic control on dynamical systems using point mass and linear inverted pendulum models demonstrate up to orders of magnitude computational speedups, due to more efficient branch-and-bound processes. Hardware demonstrations with quadrupedal robots validate real-time replanning capabilities under dynamic environmental conditions.
           </p>
-          <p>
+          <!-- <p>
             Our approach augments neural radiance fields
             (NeRF) by optimizing an
             additional continuous volumetric deformation field that warps each observed point into a
@@ -283,7 +285,7 @@
             images of the same pose at different viewpoints. We show that our method faithfully
             reconstructs non-rigidly deforming scenes and reproduces unseen views with high
             fidelity.
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
@@ -348,7 +350,42 @@
     <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3">Experiments</h2>
+
+          <div class="columns is-centered">
+
+          <!-- Visual Effects. -->
+          <div class="column">
+            <div class="content">
+              <h2 class="title is-4">Temporal Path Planning for Multi-Agent Systems</h2>
+              <p>
+                Three robots follow conflict-free trajectories to complete tasks across multiple rooms, demonstrating efficient path planning and scheduling.
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/factory.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <!--/ Visual Effects. -->
+
+          <!-- Matting. -->
+          <div class="column">
+            <h2 class="title is-4">Dynamic Replanning under Temporal Logic Constraints</h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <p>
+                  A quadruped robot is physically dragged off course and encounters a new obstacle. It dynamically replans under temporal logic to reach an alternative feasible target.
+                </p>
+                <video id="matting-video" controls playsinline height="100%">
+                  <source src="./static/videos/drag.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+
+            </div>
+          </div>
+        </div>
 
         <!-- Interpolating. -->
         <h3 class="title is-4">Interpolating states</h3>
@@ -446,7 +483,7 @@
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{park2021nerfies,
   author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
+  title     = {Towards Tighter Convex Relaxation of Mixed-integer Programs: Leveraging Logic Network Flow for Task and Motion Planning},
   journal   = {ICCV},
   year      = {2021},
 }</code></pre>
