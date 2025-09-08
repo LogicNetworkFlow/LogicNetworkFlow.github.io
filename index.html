@@ -216,42 +216,46 @@
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Experiments</h2>
-
-          <div class="columns is-centered">
-
-          <!-- Visual Effects. -->
-          <div class="column">
-            <div class="content">
-              <h2 class="title is-4">Temporal Path Planning for Multi-Agent Systems</h2>
-              <p>
-                Three robots follow conflict-free trajectories to complete tasks across multiple rooms, demonstrating efficient path planning and scheduling.
-              </p>
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/factory.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-          </div>
-          <!--/ Visual Effects. -->
-
-          <!-- Matting. -->
-          <div class="column">
-            <h2 class="title is-4">Dynamic Replanning under Temporal Logic Constraints</h2>
-            <div class="columns is-centered">
-              <div class="column content">
-                <p>
-                  A quadruped robot is physically dragged off course and encounters a new obstacle. It dynamically replans under temporal logic to reach an alternative feasible target.
-                </p>
-                <video id="matting-video" controls playsinline height="100%">
-                  <source src="./static/videos/drag.mp4"
-                          type="video/mp4">
-                </video>
-              </div>
-
-            </div>
+        
+        <!-- Bipedal Locomotion Video -->
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-4">Bipedal Locomotion TAMP with Linear Inverted Pendulum Dynamics and Safe Footstep Regions</h2>
+            <p>
+              Optimized footstep planning for bipedal walking robots using temporal logic specifications with safe contact regions.
+            </p>
+            <video id="bipedal-video" autoplay controls muted loop playsinline style="width: 100%; height: auto;">
+              <source src="./static/videos/bipedal_walking_video.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
-
+    
+        <!-- Multi-Agent Planning Video -->
+        <div class="columns is-centered" style="margin-top: 3rem;">
+          <div class="column is-four-fifths">
+            <h2 class="title is-4">Temporal Path Planning for Multi-Agent Systems</h2>
+            <p>
+              Three robots follow conflict-free trajectories to complete tasks across multiple rooms, demonstrating efficient path planning and scheduling.
+            </p>
+            <video id="factory-video" autoplay controls muted loop playsinline style="width: 100%; height: auto;">
+              <source src="./static/videos/factory.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+    
+        <!-- Dynamic Replanning Video -->
+        <div class="columns is-centered" style="margin-top: 3rem;">
+          <div class="column is-four-fifths">
+            <h2 class="title is-4">Dynamic Replanning under Temporal Logic Constraints</h2>
+            <p>
+              A quadruped robot is physically dragged off course and encounters a new obstacle. It dynamically replans under temporal logic to reach an alternative feasible target.
+            </p>
+            <video id="replanning-video" controls playsinline style="width: 100%; height: auto;">
+              <source src="./static/videos/drag.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+    
       </div>
     </div>
     <!--/ Animation. -->
