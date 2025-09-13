@@ -248,7 +248,123 @@
             </video>
           </div>
         </div>
-    
+
+        <!-- Computational Results Section -->
+        <div class="columns is-centered" style="margin-top: 3rem;">
+          <div class="column is-five-sixths">
+            <h2 class="title is-4">Computational Performance: Vehicle Routing with Temporal Logic</h2>
+            <p>
+              For vehicle routing problems formulated as temporal logic specifications with dynamic network flow, our computational results demonstrate that LNF achieves consistently tighter convex relaxation gaps, leading to significant speedups compared to Logic Tree formulations across different problem sizes.
+            </p>
+
+            <!-- Results Table -->
+            <div style="overflow-x: auto; margin-top: 2rem;">
+              <table class="table is-bordered is-striped" style="font-size: 0.85em; margin: auto;">
+                <caption style="margin-bottom: 1rem; font-weight: bold;">
+                  Table: Computation results for vehicle routing with temporal logic specifications (50 trials, 10,000s timeout)
+                </caption>
+                <thead>
+                  <tr>
+                    <th rowspan="2" colspan="2"></th>
+                    <th colspan="4" style="text-align: center;">3 Robots, 9 Tasks, N=50</th>
+                    <th colspan="4" style="text-align: center;">6 Robots, 18 Tasks, N=70</th>
+                  </tr>
+                  <tr>
+                    <th>LNF</th>
+                    <th>LNF-w/o F-M</th>
+                    <th>LT</th>
+                    <th>Speedup</th>
+                    <th>LNF</th>
+                    <th>LNF-w/o F-M</th>
+                    <th>LT</th>
+                    <th>Speedup</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="2"># binary vars</td>
+                    <td>245</td>
+                    <td>245</td>
+                    <td>245</td>
+                    <td>-</td>
+                    <td>1242</td>
+                    <td>1242</td>
+                    <td>1242</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"># continuous vars</td>
+                    <td><strong>17,645</strong></td>
+                    <td>242,800</td>
+                    <td>17,656</td>
+                    <td>-</td>
+                    <td><strong>48,994</strong></td>
+                    <td>1,524,490</td>
+                    <td>49,013</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Root gap (%)</td>
+                    <td><strong>6.7±3.1</strong></td>
+                    <td>6.7±3.1</td>
+                    <td>31.2±4.3</td>
+                    <td>-</td>
+                    <td><strong>8.1±2.0</strong></td>
+                    <td>8.1±2.0</td>
+                    <td>38.0±1.7</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="4">Gurobi</td>
+                    <td>T-Find (10%)</td>
+                    <td><strong>1.1±0.4</strong></td>
+                    <td>266.0±89.5</td>
+                    <td>5.7±2.3</td>
+                    <td><strong>5×</strong></td>
+                    <td><strong>49.2±5.3</strong></td>
+                    <td>2580.9±1161.4</td>
+                    <td>1178.8±244.9</td>
+                    <td><strong>24×</strong></td>
+                  </tr>
+                  <tr>
+                    <td>T-Find (optimal)</td>
+                    <td><strong>1.8±0.6</strong></td>
+                    <td>643.8±329.1</td>
+                    <td>22.6±14.9</td>
+                    <td><strong>12×</strong></td>
+                    <td><strong>570.0±245.9</strong></td>
+                    <td>Timeout</td>
+                    <td>Timeout</td>
+                    <td><strong>>18×</strong></td>
+                  </tr>
+                  <tr>
+                    <td>T-Prove (10%)</td>
+                    <td><strong>1.2±0.4</strong></td>
+                    <td>337.7±117.3</td>
+                    <td>22.4±14.5</td>
+                    <td><strong>19×</strong></td>
+                    <td><strong>49.4±6.5</strong></td>
+                    <td>3675.0±893.3</td>
+                    <td>1990.6±810.0</td>
+                    <td><strong>40×</strong></td>
+                  </tr>
+                  <tr>
+                    <td>T-Prove (optimal)</td>
+                    <td><strong>1.7±0.8</strong></td>
+                    <td>1202.6±849.9</td>
+                    <td>52.9±34.6</td>
+                    <td><strong>31×</strong></td>
+                    <td><strong>779.2±409.8</strong></td>
+                    <td>Timeout</td>
+                    <td>Timeout</td>
+                    <td><strong>>13×</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+            
       </div>
     </div>
     <!--/ Animation. -->
